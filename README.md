@@ -1,4 +1,4 @@
-# 2022
+# GSMST TSA Webmaster 2022
 
 GSMST TSA Webmaster Event 2021-22
 
