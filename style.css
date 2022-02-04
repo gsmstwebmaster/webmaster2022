@@ -1,0 +1,176 @@
+// NAVIGATION BAR FORMATTING 
+
+.flexbox { 
+ display:inline-flex;
+ justify-content: space-evenly;
+ align-items: center; 
+ width: 100%;	
+}
+
+.topnavig { 
+text-align: center;
+
+}
+
+.topnavig li {
+  float: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 20px;
+  Font-family: Sans-serif; 
+}
+
+@media screen and (max-width: 760px) { 
+ .flexbox { 
+ 	display:inline-block;
+  }
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+/*Headers */ 
+
+.titlebox {
+	background-color: #004389;
+	color: #B4D2E7;
+	font-size: 30px;
+}
+
+/* SLIDESHOW FORMATTING */
+
+.row2 { 
+width: 100%; 
+display: table-row-group;
+justify-content: space-evenly;
+background: black;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 150px;
+}
+
+/* Outline */
+
+.outlined {
+  text-shadow: 5px 5px 5px #B4D2E7;
+  color: black;
+  font-family: Georgia, Serif;
+}
+
+/* Nav bar for design page */
+
+.nav-tabs {
+  background-color: #b4d2e7;
+}
+
+.nav-link{
+  color: #002852;
+  height: 60px;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Fade right */
+
+@-webkit-keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateX(20px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+h1 {
+		
+    font-family: 'Open Sans', serif;
+    font-weight: bold; 
+    font-size: 50px; 
+}
+
+h2 { 
+
+font-family: 'Open Sans', serif; 
+font-size: 30px;	
+
+}
+
+h3 { 
+   font-family: 'Open Sans', serif;
+   font-weight: italic;
+   font-size: 30px; 
+}
+
+
+p { 
+
+font-family: 'Lato', serif;
+font-size: 20px; 
+
+}
