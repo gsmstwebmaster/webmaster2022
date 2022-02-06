@@ -1,65 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/6/6f/Seal_of_GSMST.png" type="image/gif" sizes="17x25">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>About</title>
-    <!--bootstraps stylesheet-->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <!--google fonts-->
-      <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Open+Sans|Lato">
-    </head> 
-    
-<!-- NAVIGATION BAR ----> 
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/6/6f/Seal_of_GSMST.png" type="image/gif" sizes="17x25">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>About</title>
-    <!--bootstraps stylesheet-->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <!--google fonts-->
-      <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Open+Sans|Lato">
+    <head>
+        <title>W3.CSS Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Lato", sans-serif;
+            }
+
+            body,
+            html {
+                height: 100%;
+                color: #777;
+                line-height: 1.8;
+            }
+
+            /* Create a Parallax Effect */
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* First image (Logo. Full height) */
+            .bgimg-1 {
+                background-image: url('https://i.postimg.cc/xC9qt1rb/TSA-logo-img.png');
+                min-height: 100%;
+            }
+
+            /* Second image (Portfolio) */
+            .bgimg-2 {
+                background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+                min-height: 400px;
+            }
+
+            /* Third image (Contact) */
+            .bgimg-3 {
+                background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+                min-height: 400px;
+            }
+
+            .w3-wide {
+                letter-spacing: 10px;
+            }
+
+            .w3-hover-opacity {
+                cursor: pointer;
+            }
+
+            /* Turn off parallax scrolling for tablets and phones */
+            @media only screen and (max-device-width: 1600px) {
+
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3 {
+                    background-attachment: scroll;
+                    min-height: 400px;
+                }
+            }
+        </style>
     </head>
- <!--NAVIGATION BAR ------------------------------------------------------------->        
-   <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
-  <div class="container-fluid animated fadeIn">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-		<div class = "topnavig">
-      <ul class="nav navbar-nav flexbox">
-		  <li><a href="index.html">Home</a></li>
-        <li><a href="ourschool.html">Career and Technical Education</a></li>
-        <li><a href="ourchapter.html">Our Chapter</a></li>
-        <li><a href="design.html">Design Brief & Solution</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-	</div>
-	   </div>
-</nav>
-  
+<body>
+
+    <!-- NAVIGATION BAR ----> 
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #000000">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0 flexbox">
+<li class="nav-itm">
+<a class="nav-lin" href="#"></a>
+</li>
+<li class="nav-item">
+<a class= "nav-link" href="index.html"><h4> Home</h4> </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="ourschool.html"><h4>Career and Technical Education</h4></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="ourchapter.html"><h4>Our Chapter</h4></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="design.html"><h4>Design Brief</h4></a>
+</li>
+ <li class="nav-item active">
+<a class="nav-link" href="about.html"><h4>About</h4></a>
+</li>
+    
+</ul>
+
 <style>
 
 .h4 {
@@ -78,202 +122,226 @@ width: 100%;
 } 
 </style>
 
-    <link href = "CSS.css" rel="stylesheet"/>
-  <head>
-    <title>Our Chapter</title>
-    <link rel="stylesheet"
-    href="https://fonts.google.com/specimen/Mochiy+Pop+P+One#standard-styles">
-    <div id="title" class="slide header">
-    <h1>Our Chapter</h1>
-    
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">TSA <span
+    class="w3-hide-small">Our</span> Chapter</span>
     </div>
-          
-    <div id="slide1" class="slide">
-    <div class="title">
-    <h1>What is TSA</h1>
-    <p>TSA, or Technology Student Association, is a club where students gather in teams based on their interests and work collectively to fulfill the final challenge of their events, fostering lasting bonds along the way. These events have challenges of many different themes - including engineering, computer science, arts, music, speaking/debate, and general science. Some of the events have members working together to create a final product for submission, while others are on-site and have students practicing throughout the year to demonstrate their skill and effort directly at the competition whether it be through debate, video producing, or a multitude of other events.
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">What is TSA</h3>
+        <p class="w3-center"><em>Technology Student Association</em></p>
+        <p>TSA, or Technology Student Association, is a club where students gather in teams based on their interests and work collectively to fulfill the final challenge of their events, fostering lasting bonds along the way. These events have challenges of many different themes - including engineering, computer science, arts, music, speaking/debate, and general science. Some of the events have members working together to create a final product for submission, while others are on-site and have students practicing throughout the year to demonstrate their skill and effort directly at the competition whether it be through debate, video producing, or a multitude of other events.
         
-        This year's State Leadership Conference will be held at Classic Center in Athens, GA on March 16-19, 2022. The 2022 NLC National TSA Conference will be from June 26-30 in Dallas, TX.
-    </p>
-    </div>
-    <img src="https://drive.google.com/file/d/1pZCghK0d2Zm6TDwHM-S61ww0Tog5IaV1/view?usp=sharing">
-    </div>
-          
-    <div id="slide2" class="slide">
-    <div class="title">
-    <h1>Our History</h1>
-    <p>Our school chapter was founded in 2013. Since then, we have been participating in a multitude of events and have impressively ranked in many of them. We have had moments of consecutively winning top three as a whole chapter. This 2020-2021 year, our chapter boasts a member number of roughly 300.
+        This year's State Leadership Conference will be held at Classic Center in Athens, GA on March 16-19, 2022. The 2022 NLC National TSA Conference will be from June 26-30 in Dallas, TX.</p>
         
-        
-    <p>Our TSA mascot is the Technodragon!</p>
-    </p>
-    </div>
-    <img src="https://drive.google.com/file/d/1pMd3tOfgARaX1lCeBStHZIWIeopfJrsd/view?usp=sharing"> 
-    </div>
-         
-    <div id="slide3" class="slide">
-    <div class="title">
-    <h1>TSA Creed</h1>
-    <p>I believe in using technology to make the world a better place.</p>
-    <p>I believe in collaborating with others to create beneficial solutions for the future.</p>
-    <p>I believe that I should be dedicated to creating new technologies and educating others about technology.</p>
-    <p>I will strive to better the world around us and to spread the influence of technology.</p>
-    </p>
-    </div>
-    <img src="https://drive.google.com/file/d/1BoWpO9k6YJYnHWX_E1vN6xWYgfMl9ye_/view?usp=sharing">
-    </div>
-     
-    <div class = "container-fluid text-center titlebox">
-     <h2>
-      <b>Our Core Officers</b>
-    </h2>
-    </div>
-    
-    <div class = "container-fluid text-center titlebox">
-      <h2>
-       <b>Past Activities</b>
-     </h2>
-     </div>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b></i>Our History</b></p><br>
+                <img src="https://i.postimg.cc/RCK4Nz2k/1-jpeg.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="500" height="333">
+            </div>
 
-     <div class = "container-fluid text-center titlebox">
-      <h2>
-       <b>Past Awards</b>
-     </h2>
-     </div>
-   
-    </head>
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>Our school chapter was founded in 2013. Since then, we have been participating in a multitude of events and have impressively ranked in many of them. We have had moments of consecutively winning top three as a whole chapter. This 2020-2021 year, our chapter boasts a member number of roughly 300. </p>
+                <p>Our TSA mascot is the Technodragon!</p>
+           
+        </div><div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b></i>TSA Creed</b></p><br>
+                <img src="https://i.postimg.cc/d3x8byvf/3.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                    width="500" height="250">
+            </div>
 
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>I believe in using technology to make the world a better place.</p>
+                <p>I believe in collaborating with others to create beneficial solutions for the future.</p>
+                <p>I believe that I should be dedicated to creating new technologies and educating others about technology.</p>
+                <p>I will strive to better the world around us and to spread the influence of technology.</p>
+            </div>
+        </div>
+        <h3 class="w3-center">Core Officers</h3>
 
-</html>
+</body>
 
-
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
-@import url(https://fonts.google.com/specimen/Mochiy+Pop+P+One#standard-styles);
-
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-body { 
-  margin:0;
-  padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: Nunito;
-}
-
-h1 {
-   font-size: 250%;
-   color: #B4D2E7
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 50px;
-    color: #B4D2E7
-}
-
-p {
-  font-size: 140%;
-  line-height: 150%;
-  color: #B4D2E7;
-}
-
-.slide {
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
   position: relative;
-  padding: 25vh 10%;
-  min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-	transform-style: inherit;
+  margin: auto;
 }
 
-img {
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  left: 35%;
-  width: 320px;
-  height: 240px;
-  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
-
-.slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
+/* Position the "next button" to the right */
+.next {
   right: 0;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  border-radius: 3px 0 0 3px;
 }
 
-.title {
-  width: 50%;
-  padding: 5%;
-  border-radius: 5px;
-  background: rgba(68, 0, 255, 0.7);
-  box-shadow: 0 0 8px rgba(0, 255, 255, 0.7);
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-.slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover;  
-}
-
-.header {
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
-  font-size: 175%;
-  color: rgb(0, 0, 0);
-  text-shadow: 0 2px 2px #000;
 }
 
-#title h1 {
- transform: translateZ(.25px) scale(.75);
- transform-origin: 50% 100%;
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-#slide1:before {
-  background-image: url("https://drive.google.com/file/d/1pZCghK0d2Zm6TDwHM-S61ww0Tog5IaV1/view?usp=sharing");
-  transform: translateZ(-1px) scale(2);
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-#slide2 {
-  background-image: url("https://drive.google.com/file/d/1pMd3tOfgARaX1lCeBStHZIWIeopfJrsd/view?usp=sharing");
-  z-index:2;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-#slide3:before {
-  background-image: url("https://drive.google.com/file/d/1BoWpO9k6YJYnHWX_E1vN6xWYgfMl9ye_/view?usp=sharing");
-  transform: translateZ(-1px) scale(2);
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.titlebox {
-    background-color: #004389;
-    color: #B4D2E7;
-    font-size: 30px;
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="" style="width:100">
+  <div class="text">President: Grace Seo</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="" style="width:100%">
+  <div class="text">Vice President: Wen Zhuo</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="" style="width:100%">
+  <div class="text">Treasurer: Dylan Nyugen</div>
+
+</div><div class="mySlides fade">
+  <img src="" style="width:100%">
+  <div class="text">Secretary: Benjamin Kang</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="" style="width:100%">
+  <div class="text">Reporter: Noel Park</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="" style="width:100%">
+  <div class="text">Sergeant-At-Arms: Samad Hakani</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+
+</html>
