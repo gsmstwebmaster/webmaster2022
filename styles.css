@@ -2,21 +2,23 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+/*TODO section sizes in px*/
+
 body {
-    color: white;
+  color: white;
   height: 6000px;
   background: linear-gradient(hsl(335, 82%, 39%), #f5a439, #e66465);
 }
 
-.section1{
-    height: 100vh;
-    width: 100%;
-    outline: solid black 1px;
+.section1 {
+  height: 100vh;
+  width: 100%;
+  outline: solid black 1px;
 }
-.section2{
-    height: 100vh;
-    width: 100%;
-    outline: solid black 1px;
+.section2 {
+  height: 100vh;
+  width: 100%;
+  outline: solid black 1px;
 }
 
 .navbar {
@@ -45,7 +47,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .title {
@@ -57,46 +58,46 @@ body {
   font-size: 2rem;
 }
 
-.about{
-    margin: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
+.about {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
 .about-title {
-    text-transform: uppercase;
-    font-size: 6rem;
-    letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
 }
 
 .description {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .days {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .paragraph {
-    gap: 1.5rem;
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  gap: 1.5rem;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.day-title{
-    align-self: center;
-    font-size: 2rem;
+.day-title {
+  align-self: center;
+  font-size: 2rem;
 }
 
 .content {
-    font-size: 1.5rem;
-    line-height: 1.25em;
-    width: 75%;
+  font-size: 1.5rem;
+  line-height: 1.25em;
+  width: 75%;
 }
