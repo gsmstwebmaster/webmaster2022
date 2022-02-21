@@ -46,6 +46,12 @@
                 <p class="idea-desc">
                     <%= idea.idea %>
                 </p>
+                <p class="idea-likes">
+                    <%= idea.likes || "0" %>
+                </p>
+                <form method="POST" action="/teams/<%= idea.id %>/like ">
+                    <input type="submit" value="Like">
+                </form>
             </div>
             
             <% }) %> 

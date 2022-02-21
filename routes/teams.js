@@ -10,11 +10,16 @@ router.get('/', (req, res) =>{
     const idea = db.collection('ideas').get()
     .then((snapshot) => {
         snapshot.forEach(idea => {
-            ideas.push(idea.data())
+            console.log(idea.id)
+            ideas.push({
+                name: idea.data().name,
+                idea: idea.data().idea,
+                id: idea.id,
+                likes: idea.data().likes
+            })
         })
     })
     .then(() => {
-        console.log(ideas)
         res.render('teams', {ideas})
     })
     
@@ -26,6 +31,14 @@ router.post('/ideas', (req, res) => {
         idea: req.body.idea
     }
     db.collection('ideas').add(data)
+    .then(() => {
+        res.redirect('/teams')
+    })
+})
+
+router.post('/:id/like', (req, res) => {
+    db.collection('ideas').doc(req.params.id)
+    .update({likes: FieldValue.increment(1)})
     .then(() => {
         res.redirect('/teams')
     })
