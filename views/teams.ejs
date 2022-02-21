@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="teams.css">
+    <title>TSA WEBMASTER</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="nav-button">TestBtn</div>
+            <div class="nav-button">TestBtn</div>
+            <div class="nav-button">TestBtn</div>
+            <div class="nav-button">TestBtn</div>
+            <a href="/teams"><div class="nav-button">Teams</div></a>
+        </div>
+
+        <div class="nav-right">
+            <a href="/signin"><div class="nav-button">Register</div></a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h3 class="text">
+            In the spirit of creativity, blah blah blah
+        </h3>
+        <p>Share your ideas and look at other peoples' ideas to figure out who you want to team up with!</p>
+        <form class="idea-form" method="POST" action="/teams/ideas">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="idea-input" required>
+            
+            <label for="idea">Idea</label>
+            <textarea class="idea-input" name="idea" id="idea" minlength="75" maxlength="200" rows=10 cols="30" placeholder="I want to make a word guessing game where you guess 5-letter words" required></textarea>
+            <button type="submit">Share</button>
+        </form>
+
+        <div class="idea-view">
+            <% locals.ideas.forEach(idea => { %> 
+            <div class="idea-card">
+                <h1 class="idea-name">
+                    <%= idea.name %>
+                </h1>
+                <p class="idea-desc">
+                    <%= idea.idea %>
+                </p>
+            </div>
+            
+            <% }) %> 
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -12,7 +12,10 @@
   "name": "webmaster",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "tailwindcss": "^3.0.23"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gsmstwebmaster/webmaster2022.git"
