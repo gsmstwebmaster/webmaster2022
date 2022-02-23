@@ -36,8 +36,8 @@
 
     <div class="outer background">
         <div class="panel-content">
-            <div class="panel-subtitle">
-                Share your ideas and look at other peoples' ideas to figure out who you want to team up with!
+            <div class="panel-title">
+                Share your ideas!
             </div>
             <form class="idea-form" method="POST" action="/teams/ideas">
                 <label for="name" class="panel-subtitle">Name</label>
@@ -57,11 +57,9 @@
                     <h1 class="panel-subtitle">
                         <%= idea.name %>
                     </h1>
-                    
                     <p class="idea-description">
                         <%= idea.idea %>
                     </p>
-    
                     <div class="idea-footer">
                         <form method="POST" action="/teams/<%= idea.id %>/like ">
                             <button type="submit" value="Like" id="like-btn"><span class="material-icons red  md-48">
@@ -72,9 +70,7 @@
                         <p class="panel-subtitle">
                             <%= idea.likes || "0" %>
                         </p>
-                        
                     </div>
-                    
                 </div>
             <% }) %> 
         </div>
