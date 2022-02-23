@@ -1,0 +1,281 @@
+/* CSS HSL */
+
+:root {
+  font-family: "Nunito", sans-serif;
+  --medium-spring-green: hsla(141, 89%, 71%, 1);
+  --blue-crayola: hsla(222, 100%, 61%, 1);
+  --oxford-blue: hsla(216, 92%, 14%, 1);
+  --jasmine: hsla(45, 100%, 76%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+}
+
+/*TODO section sizes in px*/
+
+body {
+  min-height: 100vh;
+}
+
+.page-content {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  height: 3rem;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  box-shadow: 5px 0px rgba(0, 0, 0, 0.699);
+}
+
+.nav-left {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-right {
+  display: flex;
+}
+
+.header {
+  color: white;
+  background-color: var(--oxford-blue);
+  width: 100%;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  margin: auto;
+  padding-top: 50px;
+  font-size: 3rem;
+}
+
+.outer {
+  background-color: rgb(252, 252, 252);
+  padding: 50px 0px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+#infotext {
+  color: white;
+  padding: 50px 0;
+  width: 800px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+.about {
+  background: linear-gradient(var(--oxford-blue), var(--blue-crayola));
+}
+
+.panel-text-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  text-align: left;
+}
+.panel-subtitle {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.panel-title {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  padding-bottom: 25px;
+}
+
+.panel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  padding: 50px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.27);
+  border-radius: 15px;
+  width: 800px;
+}
+
+.background {
+  background-color: var(--jasmine);
+}
+
+.panel-description {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.panel-img {
+  height: 200px;
+  padding: 20px 0;
+}
+
+.panel-text {
+  margin-bottom: 35px;
+  text-align: left;
+  font-size: 1.25em;
+  line-height: 2rem;
+  width: 90%;
+}
+
+.panel-list {
+  text-align: center;
+  padding-top: 25px;
+  list-style-type: disc;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: 200px 400px;
+  grid-auto-rows: auto;
+  text-align: left;
+}
+
+.time {
+  font-size: 1.25rem;
+  padding: 20px 0;
+  margin: auto;
+}
+
+.time-details {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin: auto;
+  width: 300px;
+}
+
+.event {
+  padding: 15px 0;
+  font-size: 1.5rem;
+}
+
+#like-btn {
+  background: none;
+  border: none;
+}
+
+#like-btn:hover {
+  transform: scale(1.1);
+}
+
+.material-icons.red {
+  color: #ff0000;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.idea-form {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.idea-input {
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 1.25em;
+  line-height: 2rem;
+  padding: 5px;
+}
+
+.idea-form > label {
+  margin-bottom: 5px;
+}
+
+.idea-submit {
+  background-color: white;
+  padding: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+.idea-grid {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  gap: 80px;
+  grid-auto-rows: 300px;
+}
+
+.idea-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.27);
+  border-radius: 15px;
+}
+
+.idea-description {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.idea-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+  .subtitle {
+    font-size: 2.5rem;
+  }
+
+  .panel-content {
+    width: 450px;
+    padding: 25px;
+  }
+
+  .timeline {
+    grid-template-columns: 150px 300px;
+  }
+
+  #infotext {
+    width: 450px;
+  }
+}
