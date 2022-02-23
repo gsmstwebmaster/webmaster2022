@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "devStart": "nodemon run dev",
+    "start": "node server.js"
+  },
+  "name": "webmaster",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "tailwindcss": "^3.0.23"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsmstwebmaster/webmaster2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsmstwebmaster/webmaster2022/issues"
+  },
+  "homepage": "https://github.com/gsmstwebmaster/webmaster2022#readme",
+  "description": ""
+}

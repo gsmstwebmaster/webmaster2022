@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/radsymbol.svg" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>TSA WEBMASTER</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="/"><div class="nav-button">Home</div></a>
+            <div class="nav-button">TestBtn</div>
+            <div class="nav-button">TestBtn</div>
+            <div class="nav-button">TestBtn</div>
+            <a href="/teams"><div class="nav-button">Teams</div></a>
+        </div>
+
+        <div class="nav-right">
+            <a href="/signin"><div class="nav-button">Register</div></a>
+        </div>
+    </div>
+    
+    <div class="outer background">
+        <div class="panel-content">
+            <div class="panel-description">
+                In the spirit of creativity, blah blah blah
+            </div>
+        </div>
+    </div>
+
+    <div class="outer background">
+        <div class="panel-content">
+            <div class="panel-title">
+                Share your ideas!
+            </div>
+            <form class="idea-form" method="POST" action="/teams/ideas">
+                <label for="name" class="panel-subtitle">Name</label>
+                <input type="text" name="name" id="name" class="idea-input " required>
+                
+                <label for="idea"  class="panel-subtitle">Idea</label>
+                <textarea class="idea-input " name="idea" id="idea" minlength="75" maxlength="200" rows=10 cols="30" placeholder="I want to make a word guessing game where you guess 5-letter words" required></textarea>
+                <button type="submit" class="idea-submit">Share</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="outer background">
+        <div class="idea-grid">
+            <% locals.ideas.forEach(idea => { %> 
+                <div class="idea-card">
+                    <h1 class="panel-subtitle">
+                        <%= idea.name %>
+                    </h1>
+                    <p class="idea-description">
+                        <%= idea.idea %>
+                    </p>
+                    <div class="idea-footer">
+                        <form method="POST" action="/teams/<%= idea.id %>/like ">
+                            <button type="submit" value="Like" id="like-btn"><span class="material-icons red  md-48">
+                                favorite
+                                </span></button>
+                            
+                        </form>
+                        <p class="panel-subtitle">
+                            <%= idea.likes || "0" %>
+                        </p>
+                    </div>
+                </div>
+            <% }) %> 
+        </div>
+        
+    </div>
+    <div class="page-content">
+        <p></p>
+        
+
+        <div class="idea-view">
+            
+        </div>
+    </div>
+
+    
+</body>
+</html>
