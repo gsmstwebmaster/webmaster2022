@@ -244,6 +244,7 @@ textarea {
   text-align: center;
   font-size: 1.25rem;
   line-height: 2rem;
+  overflow-wrap: anywhere;
 }
 
 .idea-footer {
