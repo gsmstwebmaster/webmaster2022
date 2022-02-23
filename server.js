@@ -13,4 +13,4 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(1213)
+app.listen(process.env.PORT || 1213))
