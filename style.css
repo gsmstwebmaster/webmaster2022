@@ -1,281 +1,183 @@
-/*NAVIGATION BAR STYLING */ 
-.flexbox { 
- display:inline-flex;
- justify-content: space-evenly;
- align-items: center; 
- width: 100%;
-} 
-.homeimage { 
-  background-image: url(images/gsmst_pacman.gif);
-  height: 80vh;
+.introhome {
+  background-image:   url("https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg"); 
+  height: 100vh;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.activitiesimg {
+  background-color: #FFFFFF;
+  padding: 2%;
+  margin-bottom: 5vh;
+  border-radius: 2px;
+}
+
+.introtext {
+  background-color: #FFFFFF; 
+  padding: 2%; 
+  text-color: #146a99;
   
 }
 
-.sign-upimage2 { 
-  background-image: url(https://i.pinimg.com/originals/a3/c0/d5/a3c0d5bba295a152198f2aa693cdc6af.gif);
-  height: 80vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.tsainfo {
+ background-color: #FFFFFF;
+ margin: auto; 
+ padding: 20px 20px;
   
 }
- .footer { 
-    color: white; 
-  }
+.container-title {
+  display: absolute;
+  flex-direction: row;  
+  flex-wrap: nowrap; 
+  justify-content: center;  
+  align-items: center;  
+ 
 
-.ivorybackground {
-  background-color: #dceff2; 
-}
-hr.dashed {
-   border-top: 3px dashed #bbb;
-}
-
-.salmonbackground {
-  background-color: black; 
-   
-}
-
-.hometitletext {  
-  padding: 1%;
-  color: #0064b4;
-  font-size: 50px;
-  letter-spacing: 10px;
-  line-height: 40px;
-  text-align: center;
-  
-}
-
-.container-title {  
-  display: absolute; /* Set the flexbox display */
-  flex-direction: row; /* Configure the flex items to row */
-  flex-wrap: nowrap; /* Don’t wrap the flex items */
-  justify-content: center; /* Justify the flex items to the center */
-  align-items: center; /* Align the flex items to the center */
-
-  /* Design properties */
   background-color: white;
   padding: 5px;
-  
-  /* Positioning properties */
+ 
   position: absolute;
   left: 20%;
   right: 20%;
-  top: 30%; /* Change this value to move the box up or down */
-}
-
-
-.introtext {
-  background-color: lightgray; /* Add your own background color */
-  padding: 4%;
-  margin: 3%;
-  color: black; /* Add the color of your font */
-  font-size: 20px; /* Add your font size*/
-  letter-spacing: 2px; /* Adds space between letters */
-  line-height: 1.4em; /* Adds space between lines #0064b4*/
-  text-align: center;
-}
-.footer {
-			padding: 20px;
-			text-align: center;
-			background:black ;
-		}
-
-/* PARALLAX SCROLLING BEGINGS */ 
-.scrolleffect1 {
-  background-image: url("https://media.newyorker.com/photos/5909772a8b51cf59fc423387/master/pass/cover_160606_1200x1638.gif ");
-  height: 100vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  top: 50%; 
  
-}
-/*
-https://media.newyorker.com/photos/5909772a8b51cf59fc423387/master/pass/cover_160606_1200x1638.gif 
+ /*
+  border-style: solid;
+  width: 5px; 
+  border-color:  #84dcc6;
+ */ } 
 
-*/ 
-
-.scrolleffect6 {
-  background-image: url("https://media.newyorker.com/photos/5c2fbecca23f7a2cc1a7cdfb/master/w_2560%2Cc_limit/parini_reading_small.gif");
-  height: 100vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
- 
-}
-
-.scrolleffect2 {
-  background-image: url("https://1ii65ybkkbx4be3w81ausxw1-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/Lobaz-SheWolf_annalisafeliz_The-Wrap_WMEmpowerment-1.png");
-   height: 100vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
- 
-}
-.scrolleffect3 {
-  background-image: url("https://images.saatchiart.com/saatchi/645462/art/5861979/4931777-APDRWSKT-7.jpg");
-  height: 100vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+.gradientbackground1 {
+  background-image: linear-gradient( #073e5c,
+ #456fc4);
+  padding: 20px 20px; 
   
 }
 
-.scrolleffect4 {
-  background-image: url("https://ramonapintea.com/wp-content/uploads/2019/08/Magnolias-Ramona-Pintea-IMG.jpg");
+ 
+.section2tsa {
+  background-image:   url("https://bloximages.newyork1.vip.townnews.com/gwinnettdailypost.com/content/tncms/assets/v3/editorial/2/7d/27d3077d-c8d7-5608-b455-b447a30a763d/5c5a11efcb27e.image.jpg?resize=1200%2C796");
   height: 100vh;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
+}
+
+
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  float: right;
   
-}
-
-.scrolleffect5 {
-  background-image: url("https://ramonapintea.com/wp-content/uploads/2019/08/Ramona-IMG-Woman-Tiger.jpg");
-  height: 100vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  border: 1px solid #101D38;
+  background-color: #101D38;
+  width: 30%;
+  height: 60vh;
+  margin-top: 12vh;
+  color: white;
   
-}
-
-
-@media only screen and (max-width:700px) {
-  .scrolleffect5, .scrolleffect4, .scrolleffect3, .scrolleffect2, .scrolleffect1, .scrolleffect6 {
-    background-attachment: scroll;
-    height: 100%;
-    width: 100%;
-    background-position: center; 
-    background-repeat: none;
-    background-size: inherit; 
-  }
-}
-
-
-.text-section {
-  background-color: white;
-  padding: 5px 0px;
-  margin: 0px;
-  margin-top: 30px;
-  text-align: center;
-  box-shadow: 5px 10px 18px black;
-}
-
-body, html {
- 
-  font-size: 20px;
-  line-height: 1.5em;
-  margin: 0em;
-  color: black; 
-  background-color: white ; 
-  box-sizing: border-box;
-}
-
-
-
-/* FOR THE CARDS OUTLINE */ 
-.babyblue { 
-  background-color: #dceff2; 
-  border: 2px solid #dceff2;
-  border-radius: 5px;
-  padding: 20px 10px; 
-}
-
-.turqouisedivider { 
-  background-color: darkturquoise; 
-  border: 2px solid darkturquoise;
-  border-radius: 5px;
-  width: 100%;
-  height: 10%; 
-}
-
-.purpledivider { 
-  background-color: darkmagenta; 
-  border: 2px solid darkmagenta;
-  border-radius: 5px;
-  width: 100%;
-  height: 10%; 
-}
-
-.lightpurple { 
-  background-color: #efe4f5; 
-  border: 2px solid #efe4f5;
-  border-radius: 5px;
-  padding: 20px; 
-}
-
-.bluedivider { 
-  background-color: blue; 
-  border: 2px solid blue;
-  border-radius: 5px;
-  width: 100%;
-  height: 10%;  
-}
-
-ul li:hover {
-  background:  #bbb; }
-
-.lightblue { 
-  background-color: #f0f3ff; 
-  border: 2px solid #f0f3ff;
-  border-radius: 5px;
-  padding: 20px 10px; 
-}
-
-.greenbold {
-  background-color: #7cebb7; 
-  border: 2px solid #7cebb7;
-  border-radius: 5px;
-  width: 100%;
-  height: 10%;
 }
 
 .lightgreen {
-  background-color: #d9ffed; 
-  border: 2px solid #d9ffed;
+   background-color: #d9ffed; 
+   border: 2px solid #d9ffed;
    border-radius: 5px;
-  padding: 20px; 
+   padding: 20px;
+  
 }
 
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  color: #FFFFFF;
+  padding: 20px 16px;
+  width: 100%; 
+  border: none;
+  outline: none;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 5px;
+  text-style: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  marging: auto;
+  height: 100%; 
+  padding: 0;
+  display: inline-block;
+  line-height: 50px;
+  font-size: 30px;
+
+  
+}
+.activitybox {
+  background-color: #1d2126
+   /* #146A99; */
+
+  
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #234487;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #456fc4;
+}
+
+
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  background-color: #FFFFFF; 
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  border: solid; 
+  border-width: 5px;
+  border-color: #1d2126;
+  height: 60vh;
+  position: relative;
+  margin-top: 12vh;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+   
+  
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  
+  
+}
 
 h1 {
   letter-spacing: 5px;
-  font-family: "Arial Black";
-  color: black;
+  font-family: 'Nunito', sans-serif;
+  color: #0064b4;
 }
-
 
 h2 {
   letter-spacing: 3px;
-  font-family: "Arial Black";
-  text-transform: Capitalize;
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
 }
 
 h3 {
   letter-spacing: 3px;
-  font-family: "Arial";
+  font-family: 'Nunito', sans-serif;
   font-weight: 20%; 
   text-transform: Capitalize;
+  text-align: center; 
 }
 
 h4 {
@@ -283,7 +185,7 @@ h4 {
   font-family: "Lato";
   font-weight: 10%; 
   font-size: 20px;
-  color: white; 
+  color: black; 
   
 }
 
@@ -297,53 +199,15 @@ h5 {
 
 h6 { 
 letter-spacing: 5px;
-  font-family: "Arial";
+  font-family: 'Nunito', sans-serif;
   color: #0064b4;
   font-size: 5vh;
 
 
 }
-p  {
-  color: black; 
-  text-decoration: none;
-   font-family: "Arial";
-}
-
-cardtext  {
-  color: black; 
-  text-decoration: none;
-   font-family: "Arial";
-}
-
-.background { 
-  background-color: #d9ffed; 
-  width: 100%;
-  overflow: hidden; 
-}
-
-.background1 {
-
- background-color: white; 
-  width: 100%;
-  overflow: hidden;
-  outline: none;
-
-}
-
-.introbuttons {
-  background-color: white;  
-  color: black; 
-  font-size: 20px; 
+.footer {
+  padding: 20px;
   text-align: center;
-  display: flex; 
-  justify-content: space-around;
-  
-   }  
-
-  @media screen and (max-width: 760px) { 
- .introbuttons { 
- 	display:inline-block;
-  justify-content: space-between; 
-  padding: 10%;
- } 
-  } 
+  background-color: slate-200;
+  text-color: #FFFFFF;
+}
