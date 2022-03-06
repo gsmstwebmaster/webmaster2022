@@ -1,0 +1,166 @@
+.content {
+  padding: 100px 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.vtabbar {
+  width: 1200px;
+  height: 500px;
+  display: flex;
+}
+
+.tabbar-content {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.tabbar-buttons {
+  width: 20%;
+  height: 100%;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabbar-button {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.tabbar-button:hover {
+  outline: solid red 1px;
+  cursor: grab;
+}
+
+.tabbar-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(208, 255, 239);
+  justify-content: center;
+}
+
+.section-content-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 50px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.section-carousel {
+  display: flex;
+  width: 80%;
+  gap: 40%;
+  padding: 0px 200px;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.section-carousel-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  outline: solid black 1px;
+}
+
+.section-carousel-btn {
+  width: 10%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+.section-carousel-btn:hover {
+  cursor: grab;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+.section-carousel-img {
+  max-height: 85%;
+  margin: auto;
+  scroll-snap-align: center;
+}
+
+.section-img {
+  max-width: 75%;
+  max-height: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .vtabbar {
+    flex-direction: column-reverse;
+    width: 800px;
+  }
+
+  .tabbar-buttons {
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+  }
+
+  .tabbar-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .vtabbar {
+    width: 500px;
+    height: auto;
+  }
+
+  .section-content-box {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 50px;
+  }
+
+  .section-carousel-box {
+    height: auto;
+    flex: none;
+  }
+
+  .section-carousel {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0;
+  }
+
+  .section-carousel-btn {
+    display: none;
+  }
+
+  .section-carousel-img {
+    max-height: unset;
+    width: 100%;
+  }
+}
