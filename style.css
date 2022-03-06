@@ -1,5 +1,5 @@
 .introhome {
-  background-image:   url("https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg"); 
+  background-image: url("https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg");
   height: 100vh;
   width: 100%;
   background-attachment: fixed;
@@ -9,57 +9,52 @@
 }
 
 .activitiesimg {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 2%;
   margin-bottom: 5vh;
   border-radius: 2px;
 }
 
 .introtext {
-  background-color: #FFFFFF; 
-  padding: 2%; 
+  background-color: #ffffff;
+  padding: 2%;
   text-color: #146a99;
-  
 }
 
 .tsainfo {
- background-color: #FFFFFF;
- margin: auto; 
- padding: 20px 20px;
-  
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px 20px;
 }
 .container-title {
   display: absolute;
-  flex-direction: row;  
-  flex-wrap: nowrap; 
-  justify-content: center;  
-  align-items: center;  
- 
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 
   background-color: white;
   padding: 5px;
- 
+
   position: absolute;
   left: 20%;
   right: 20%;
-  top: 50%; 
- 
- /*
+  top: 50%;
+
+  /*
   border-style: solid;
   width: 5px; 
   border-color:  #84dcc6;
- */ } 
-
-.gradientbackground1 {
-  background-image: linear-gradient( #073e5c,
- #456fc4);
-  padding: 20px 20px; 
-  
+ */
 }
 
- 
+.gradientbackground1 {
+  background-image: linear-gradient(#073e5c, #456fc4);
+  padding: 20px 20px;
+}
+
 .section2tsa {
-  background-image:   url("https://bloximages.newyork1.vip.townnews.com/gwinnettdailypost.com/content/tncms/assets/v3/editorial/2/7d/27d3077d-c8d7-5608-b455-b447a30a763d/5c5a11efcb27e.image.jpg?resize=1200%2C796");
+  background-image: url("https://bloximages.newyork1.vip.townnews.com/gwinnettdailypost.com/content/tncms/assets/v3/editorial/2/7d/27d3077d-c8d7-5608-b455-b447a30a763d/5c5a11efcb27e.image.jpg?resize=1200%2C796");
   height: 100vh;
   width: 100%;
   background-attachment: fixed;
@@ -68,59 +63,55 @@
   background-size: cover;
 }
 
-
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Style the tab */
 .tab {
   float: right;
-  
-  border: 1px solid #101D38;
-  background-color: #101D38;
+
+  border: 1px solid #101d38;
+  background-color: #101d38;
   width: 30%;
   height: 60vh;
   margin-top: 12vh;
   color: white;
-  
 }
 
 .lightgreen {
-   background-color: #d9ffed; 
-   border: 2px solid #d9ffed;
-   border-radius: 5px;
-   padding: 20px;
-  
+  background-color: #d9ffed;
+  border: 2px solid #d9ffed;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px 16px;
-  width: 100%; 
+  width: 100%;
   border: none;
   outline: none;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   letter-spacing: 5px;
-  text-style: bold;
+  font-style: bold;
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
-  marging: auto;
-  height: 100%; 
+  margin: auto;
+  height: 100%;
   padding: 0;
   display: inline-block;
   line-height: 50px;
   font-size: 30px;
-
-  
 }
 .activitybox {
-  background-color: #1d2126
-   /* #146A99; */
-
-  
+  background-color: #1d2126;
+  /* #146A99; */
 }
+
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #234487;
@@ -131,17 +122,15 @@
   background-color: #456fc4;
 }
 
-
-
 /* Style the tab content */
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  background-color: #FFFFFF; 
+  background-color: #ffffff;
   border: 1px solid #ccc;
   width: 70%;
   border-left: none;
-  border: solid; 
+  border: solid;
   border-width: 5px;
   border-color: #1d2126;
   height: 60vh;
@@ -149,65 +138,57 @@
   margin-top: 12vh;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-   
-  
 }
 
 p {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: black;
-  
-  
 }
 
 h1 {
   letter-spacing: 5px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #0064b4;
 }
 
 h2 {
   letter-spacing: 3px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 40px;
 }
 
 h3 {
   letter-spacing: 3px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 20%; 
+  font-family: "Nunito", sans-serif;
+  font-weight: 20%;
   text-transform: Capitalize;
-  text-align: center; 
+  text-align: center;
 }
 
 h4 {
   letter-spacing: 1px;
   font-family: "Lato";
-  font-weight: 10%; 
+  font-weight: 10%;
   font-size: 20px;
-  color: black; 
-  
+  color: black;
 }
 
 h5 {
   letter-spacing: 1px;
   font-family: "Lato";
-  font-weight: 10%; 
+  font-weight: 10%;
   font-size: 20px;
-  
 }
 
-h6 { 
-letter-spacing: 5px;
-  font-family: 'Nunito', sans-serif;
+h6 {
+  letter-spacing: 5px;
+  font-family: "Nunito", sans-serif;
   color: #0064b4;
   font-size: 5vh;
-
-
 }
 .footer {
   padding: 20px;
   text-align: center;
   background-color: slate-200;
-  text-color: #FFFFFF;
+  text-color: #ffffff;
 }
