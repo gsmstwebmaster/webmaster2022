@@ -111,7 +111,7 @@
 }
 
 .content-banner {
-  width: 100%;
+  flex-grow: 1;
   font-size: 2rem;
   background-color: rgb(197, 255, 216);
   color: rgb(14, 41, 23);
@@ -129,7 +129,7 @@
 .vtabbar {
   margin-top: 100px;
   width: 1200px;
-  height: 500px;
+  min-height: 500px;
   display: flex;
 }
 
@@ -141,14 +141,13 @@
 
 .tabbar-buttons {
   width: 20%;
-  height: 100%;
   background-color: azure;
   display: flex;
   flex-direction: column;
+  outline: solid black 1px;
 }
 
 .tabbar-button {
-  flex-grow: 1;
   text-align: center;
   display: flex;
   height: 100%;
@@ -170,6 +169,13 @@
   align-items: center;
 }
 
+.tabbar-section > p {
+  width: 80%;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+
 .section-title {
   display: flex;
   align-items: center;
@@ -182,7 +188,7 @@
 
 .section-content-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px;
   gap: 50px;
 }
@@ -191,6 +197,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex: 1 1 0px;
   align-items: center;
   font-size: 1.2rem;
 }
@@ -229,7 +236,21 @@
   scroll-snap-align: center;
 }
 
+.section-content > * {
+    flex-grow: 1;
+}
+
+.section-content > a {
+  max-width: 100%;
+  max-height: 50%;
+}
+
+.section-content > a > img {
+  width: 100%;
+}
+
 .section-img {
+  aspect-ratio: 16/9;
   max-width: 100%;
   max-height: 50%;
 }
