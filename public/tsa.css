@@ -157,7 +157,7 @@
 }
 
 .tabbar-button:hover {
-  outline: solid red 1px;
+  background-color: rgb(123, 201, 149);
   cursor: grab;
 }
 
@@ -203,6 +203,7 @@
 }
 
 .section-carousel {
+  box-sizing: border-box;
   display: flex;
   width: 80%;
   gap: 40%;
@@ -216,13 +217,11 @@
   display: flex;
   width: 100%;
   height: 100%;
-  outline: solid black 1px;
 }
 
 .section-carousel-btn {
-  width: 10%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.411);
+  flex-grow: 1;
+  background-color: rgb(58, 58, 58);
 }
 
 .section-carousel-btn:hover {
@@ -237,7 +236,7 @@
 }
 
 .section-content > * {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .section-content > a {
