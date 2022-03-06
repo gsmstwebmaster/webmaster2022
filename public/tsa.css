@@ -1,0 +1,239 @@
+:root {
+  font-family: "Nunito", sans-serif;
+}
+
+.main-nav {
+  background-color: rgb(19, 120, 179);
+  width: 100%;
+  color: white;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.main-nav > img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.main-link,
+.nav-title {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.nav-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
+
+.main-link {
+  padding: 10px;
+}
+
+.main-link:hover {
+  background-color: rgba(0, 0, 0, 0.432);
+  color: white;
+}
+
+.content {
+  padding-top: 70px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > * {
+  text-align: center;
+  color: rgb(19, 120, 179);
+  background-color: white;
+  padding: 15px 40px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.whatistsa {
+  box-sizing: border-box;
+  width: 100%;
+  border: 20px solid hsl(202, 90%, 39%);
+  min-height: 500px;
+  background-color: white;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-title {
+  padding: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content-title-left {
+  width: 100%;
+  padding: 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.content-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  padding: 0 15px 15px 20px;
+}
+
+.content-banner {
+  width: 100%;
+  font-size: 2rem;
+  background-color: rgb(197, 255, 216);
+  color: rgb(14, 41, 23);
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.content-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.vtabbar {
+  margin-top: 100px;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+}
+
+.tabbar-content {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.tabbar-buttons {
+  width: 20%;
+  height: 100%;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabbar-button {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabbar-button:hover {
+  outline: solid red 1px;
+  cursor: grab;
+}
+
+.tabbar-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: rgb(197, 255, 216);
+  justify-content: center;
+}
+
+.section-content-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 50px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.section-carousel {
+  display: flex;
+  width: 80%;
+  gap: 40%;
+  padding: 0px 200px;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.section-carousel-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  outline: solid black 1px;
+}
+
+.section-carousel-btn {
+  width: 10%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+.section-carousel-btn:hover {
+  cursor: grab;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+.section-carousel-img {
+  max-height: 85%;
+  margin: auto;
+  scroll-snap-align: center;
+}
+
+.section-img {
+  max-width: 100%;
+  max-height: 50%;
+}
+
+.hidden {
+  display: none;
+}

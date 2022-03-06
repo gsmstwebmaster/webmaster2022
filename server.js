@@ -8,7 +8,7 @@ app.use(express.static('public'))
 app.use('/teams', teamRouter)
 
 app.get('/', (req, res) => {
-    res.redirect('/index.html')
+    res.redirect('/contamihax.html')
     console.log("Went home")
 })
 
