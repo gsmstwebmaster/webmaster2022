@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll(".tab")
+const sections = document.querySelectorAll(".roland-sec")
 console.log(sections.length)
 
 const buttons = document.querySelectorAll(".tabbar-button")
