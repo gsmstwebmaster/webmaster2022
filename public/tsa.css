@@ -257,3 +257,33 @@
 .hidden {
   display: none;
 }
+
+.img-grid {
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  background-color: rgb(58, 58, 58);
+}
+
+.grid-img {
+  width: 100%;
+}
+
+.grid-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  background-color: white;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.activities {
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
