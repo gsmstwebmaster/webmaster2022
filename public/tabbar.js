@@ -44,6 +44,7 @@ carousel = document.querySelector(".section-carousel")
 let visibleImage = carouselimages.item(0)
 
 carousel.addEventListener('scroll', event => {
+    console.log("Scrolled")
     carouselimages.forEach((img) => {
         if(isVisible(img, carousel)){
             visibleImage = img;
