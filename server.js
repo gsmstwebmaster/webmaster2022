@@ -20,6 +20,10 @@ app.get('/contamihax', (req, res) => {
     res.redirect('/contamihax.html')
 })
 
+app.get('/about', (req, res) => {
+    res.redirect('/about.html')
+})
+
 
 app.listen(process.env.PORT || 1213)
 console.log(`listening on port localhost:1213`)
